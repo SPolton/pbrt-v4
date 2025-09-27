@@ -51,7 +51,9 @@ jobs:
         path: build
       
     - name: Get cmake
-      uses: lukka/get-cmake@latest
+      uses: lukka/get-cmake@a234373d65f7cab3afb0390fbaba1f20a7510fdc
+      with:
+        cmakeVersion: 3.26.4
 
     - name: Install OpenEXR
       run: sudo apt-get -y install libopenexr-dev
