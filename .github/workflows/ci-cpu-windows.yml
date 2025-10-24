@@ -38,11 +38,9 @@ jobs:
       with:
         cmakeVersion: 3.26.4
 
-    - name: Install pkgconfig and zlib
+    - name: Install pkgconfig
       run: |
         choco install pkgconfiglite
-        vcpkg install zlib:x64-windows
-        vcpkg install zlib:x64-windows-static
 
     - name: Configure
       run: |
